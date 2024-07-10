@@ -5,8 +5,9 @@ Remember:
 * `static` makes a method/property a class method/property
 * `#` makes a method/property private
 */
-
-
+const printName = (name = 'Clark') => {
+  return ()=> name;
+}
 const getIdMaker = (id = 0) => {
   return () => ++id;
 }
